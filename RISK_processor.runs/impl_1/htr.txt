@@ -6,4 +6,4 @@
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log RegBank_unit.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source RegBank_unit.tcl -notrace
+vivado -log DataMemory_unit.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source DataMemory_unit.tcl -notrace

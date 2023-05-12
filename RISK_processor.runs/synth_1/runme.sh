@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/tkammoun/RISK_processor/RISK_processor.runs/synth_1'
+HD_PWD='/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log RegBank_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RegBank_unit.tcl
+EAStep vivado -log DataMemory_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataMemory_unit.tcl
