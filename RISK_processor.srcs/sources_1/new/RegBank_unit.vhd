@@ -41,7 +41,7 @@ end RegBank_unit;
 architecture Behavioral of RegBank_unit is
     type t_bank is array (0 to 15) of std_logic_vector(7 downto 0);
     
-    signal register_bank : t_bank := (others => (others => '0')); -- Register Bank : 16 reg 
+    signal register_bank : t_bank ; -- Register Bank : 16 reg 
 begin
      -- Synchronous Tasks : Write or RST
 

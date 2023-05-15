@@ -70,7 +70,7 @@ begin
     process 
     begin
 				
-				-- Reset data memory
+        -- Reset data memory
         local_RST <= 
             '1' after 0 ns,      
             '0' after 100 ns;    -- TEST : RESET
@@ -80,6 +80,7 @@ begin
         local_RW <= 
             '0' after 10 ns,     -- TEST : WRTIE * 4
             '1' after 50 ns;     -- TEST : Read  * 4
+
 
         local_Addr <= 
             x"01" after 10 ns,    -- TEST 1 : Write

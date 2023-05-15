@@ -39,7 +39,7 @@ end DataMemory_unit;
 architecture Behavioral of DataMemory_unit is
     type t_bank is array (0 to 15) of std_logic_vector(7 downto 0);
 
-    signal memory_bank : t_bank := (others => (others => '0')); -- Memory Bank : 16 memory entries
+    signal memory_bank : t_bank ; -- Memory Bank : 16 memory entries
 begin	
 
 
