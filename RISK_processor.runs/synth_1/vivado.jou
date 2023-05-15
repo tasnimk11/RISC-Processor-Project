@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon May 15 13:11:21 2023
-# Process ID: 7659
+# Start of session at: Mon May 15 15:14:29 2023
+# Process ID: 18811
 # Current directory: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1
-# Command line: vivado -log InstructionMemory_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstructionMemory_unit.tcl
-# Log file: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1/InstructionMemory_unit.vds
+# Command line: vivado -log Pipeline_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_unit.tcl
+# Log file: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1/Pipeline_unit.vds
 # Journal file: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source InstructionMemory_unit.tcl -notrace
+source Pipeline_unit.tcl -notrace

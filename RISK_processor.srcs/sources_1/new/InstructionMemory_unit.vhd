@@ -39,10 +39,9 @@ architecture Behavioral of InstructionMemory_unit is
 
     signal memory_bank : t_bank := ( -- Memory Bank : 16 memory entries
                                         0 => x"06000000",
-                                        1 => x"06010101",
-                                        2 => x"06101010",
-                                        3 => x"06111000",
-                                        4 => x"06111111",
+                                        1 => x"06010100",
+                                        2 => x"06101000",
+                                        3 => x"06111100",
                                         others => (others => '0')
                                     ); 
 

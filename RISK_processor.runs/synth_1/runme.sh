@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log InstructionMemory_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstructionMemory_unit.tcl
+EAStep vivado -log Pipeline_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_unit.tcl

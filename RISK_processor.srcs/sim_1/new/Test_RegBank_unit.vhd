@@ -85,8 +85,8 @@ begin
 				
         -- Reset registers
         local_RST <= 
-					'1' after 0 ns,      
-					'0' after 100 ns;    -- TEST : RESET
+            '1' after 0 ns,      
+            '0' after 100 ns;    -- TEST : RESET
 
 
         -- Write Control to registers

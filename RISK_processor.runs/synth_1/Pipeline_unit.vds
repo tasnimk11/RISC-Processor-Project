@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log Pipeline_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_unit.tcl
-
-
-****** Vivado v2018.2 (64-bit)
-  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
-  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 15 15:14:29 2023
+# Process ID: 18811
+# Current directory: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1
+# Command line: vivado -log Pipeline_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_unit.tcl
+# Log file: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1/Pipeline_unit.vds
+# Journal file: /home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
 source Pipeline_unit.tcl -notrace
 Command: synth_design -top Pipeline_unit -part xc7a35tcpg236-1
 Starting synth_design
