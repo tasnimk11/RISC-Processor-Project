@@ -63,6 +63,15 @@ begin
     end process;
     
     
+      -- Stimulus process
+    stim_proc: process
+    begin    
+         local_RST <= '1' after 2*clock_period;
+         wait for 10*clock_period;
+       wait;
+    end process;
+
+    
     
 
 end Behavioral;
