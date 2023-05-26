@@ -38,10 +38,13 @@ architecture Behavioral of InstructionMemory_unit is
     type t_bank is array (0 to 15) of std_logic_vector(31 downto 0);
 
     signal memory_bank : t_bank := ( -- Memory Bank : 16 memory entries
-                                        0 => x"06000000", -- Test AFC
-                                        1 => x"06010100", -- Test AFC
-                                        2 => x"06101000", -- Test AFC
-                                        3 => x"06111100", -- Test AFC
+                                        --ALEA 1
+                                        0  => x"06110600", -- Test AFC
+                                        1  => x"05121100", -- Test COP
+                                        --ALEA 2
+                                        9  => x"07110700", -- Test LOAD
+                                        11 => x"05121100", -- Test COP
+                                     
                                         others => (others => '0')
                                     ); 
 

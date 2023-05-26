@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Test_Pipeline_unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Test_Pipeline_unit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="160000001fs"></ZoomEndTime>
+      <Cursor1Time time="123300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="80" />
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_CLK">
+      <obj_property name="ElementShortName">local_CLK</obj_property>
+      <obj_property name="ObjectShortName">local_CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_RST">
+      <obj_property name="ElementShortName">local_RST</obj_property>
+      <obj_property name="ObjectShortName">local_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/local_B_OUT">
+      <obj_property name="ElementShortName">local_B_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">local_B_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Test_Pipeline_unit/clock_period">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/Addr_A">
+      <obj_property name="ElementShortName">Addr_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/Addr_B">
+      <obj_property name="ElementShortName">Addr_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/Addr_W">
+      <obj_property name="ElementShortName">Addr_W[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr_W[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/W">
+      <obj_property name="ElementShortName">W</obj_property>
+      <obj_property name="ObjectShortName">W</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/Data">
+      <obj_property name="ElementShortName">Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/RST">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/QA">
+      <obj_property name="ElementShortName">QA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">QA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/QB">
+      <obj_property name="ElementShortName">QB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">QB[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/insatnce_BR/register_bank">
+      <obj_property name="ElementShortName">register_bank[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">register_bank[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_CLK">
+      <obj_property name="ElementShortName">local_CLK</obj_property>
+      <obj_property name="ObjectShortName">local_CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_RST">
+      <obj_property name="ElementShortName">local_RST</obj_property>
+      <obj_property name="ObjectShortName">local_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/local_B_OUT">
+      <obj_property name="ElementShortName">local_B_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">local_B_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Test_Pipeline_unit/clock_period">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/RST">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/B_OUT">
+      <obj_property name="ElementShortName">B_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/ALU_local_A">
+      <obj_property name="ElementShortName">ALU_local_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/ALU_local_B">
+      <obj_property name="ElementShortName">ALU_local_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/ALU_local_Ctrl_ALU">
+      <obj_property name="ElementShortName">ALU_local_Ctrl_ALU[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_Ctrl_ALU[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/ALU_local_S">
+      <obj_property name="ElementShortName">ALU_local_S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_S[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/ALU_local_N">
+      <obj_property name="ElementShortName">ALU_local_N</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_N</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/ALU_local_O">
+      <obj_property name="ElementShortName">ALU_local_O</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_O</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/ALU_local_Z">
+      <obj_property name="ElementShortName">ALU_local_Z</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_Z</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/ALU_local_C">
+      <obj_property name="ElementShortName">ALU_local_C</obj_property>
+      <obj_property name="ObjectShortName">ALU_local_C</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_Addr_A">
+      <obj_property name="ElementShortName">BR_local_Addr_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_Addr_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_Addr_B">
+      <obj_property name="ElementShortName">BR_local_Addr_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_Addr_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_Addr_W">
+      <obj_property name="ElementShortName">BR_local_Addr_W[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_Addr_W[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/BR_local_W">
+      <obj_property name="ElementShortName">BR_local_W</obj_property>
+      <obj_property name="ObjectShortName">BR_local_W</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_Data">
+      <obj_property name="ElementShortName">BR_local_Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/BR_local_RST">
+      <obj_property name="ElementShortName">BR_local_RST</obj_property>
+      <obj_property name="ObjectShortName">BR_local_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_QA">
+      <obj_property name="ElementShortName">BR_local_QA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_QA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/BR_local_QB">
+      <obj_property name="ElementShortName">BR_local_QB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BR_local_QB[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/DM_local_Addr">
+      <obj_property name="ElementShortName">DM_local_Addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_local_Addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/DM_local_Data_IN">
+      <obj_property name="ElementShortName">DM_local_Data_IN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_local_Data_IN[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/DM_local_RW">
+      <obj_property name="ElementShortName">DM_local_RW</obj_property>
+      <obj_property name="ObjectShortName">DM_local_RW</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/DM_local_RST">
+      <obj_property name="ElementShortName">DM_local_RST</obj_property>
+      <obj_property name="ObjectShortName">DM_local_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/DM_local_Data_OUT">
+      <obj_property name="ElementShortName">DM_local_Data_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_local_Data_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/IM_local_Addr">
+      <obj_property name="ElementShortName">IM_local_Addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_local_Addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/IM_local_Data_OUT">
+      <obj_property name="ElementShortName">IM_local_Data_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_local_Data_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_1_OP">
+      <obj_property name="ElementShortName">PIP_1_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_1_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_1_A">
+      <obj_property name="ElementShortName">PIP_1_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_1_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_1_B">
+      <obj_property name="ElementShortName">PIP_1_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_1_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_1_C">
+      <obj_property name="ElementShortName">PIP_1_C[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_1_C[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/IP">
+      <obj_property name="ElementShortName">IP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_2_OP">
+      <obj_property name="ElementShortName">PIP_2_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_2_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_2_A">
+      <obj_property name="ElementShortName">PIP_2_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_2_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_2_B">
+      <obj_property name="ElementShortName">PIP_2_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_2_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_2_C">
+      <obj_property name="ElementShortName">PIP_2_C[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_2_C[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_2_OP">
+      <obj_property name="ElementShortName">WIRE_2_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_2_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_2_A">
+      <obj_property name="ElementShortName">WIRE_2_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_2_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_2_B">
+      <obj_property name="ElementShortName">WIRE_2_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_2_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_2_C">
+      <obj_property name="ElementShortName">WIRE_2_C[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_2_C[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_3_OP">
+      <obj_property name="ElementShortName">PIP_3_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_3_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_3_A">
+      <obj_property name="ElementShortName">PIP_3_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_3_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_3_B">
+      <obj_property name="ElementShortName">PIP_3_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_3_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_3_OP">
+      <obj_property name="ElementShortName">WIRE_3_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_3_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_3_A">
+      <obj_property name="ElementShortName">WIRE_3_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_3_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_3_B">
+      <obj_property name="ElementShortName">WIRE_3_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_3_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_4_OP">
+      <obj_property name="ElementShortName">PIP_4_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_4_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_4_A">
+      <obj_property name="ElementShortName">PIP_4_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_4_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_4_B">
+      <obj_property name="ElementShortName">PIP_4_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_4_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_4_OP">
+      <obj_property name="ElementShortName">WIRE_4_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_4_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_4_A">
+      <obj_property name="ElementShortName">WIRE_4_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_4_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/WIRE_4_B">
+      <obj_property name="ElementShortName">WIRE_4_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WIRE_4_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_5_OP">
+      <obj_property name="ElementShortName">PIP_5_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_5_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_5_A">
+      <obj_property name="ElementShortName">PIP_5_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_5_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_5_B">
+      <obj_property name="ElementShortName">PIP_5_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_5_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/ADD">
+      <obj_property name="ElementShortName">ADD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ADD[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/MUL">
+      <obj_property name="ElementShortName">MUL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MUL[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/SUB">
+      <obj_property name="ElementShortName">SUB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SUB[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/DIV">
+      <obj_property name="ElementShortName">DIV[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIV[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/COP">
+      <obj_property name="ElementShortName">COP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">COP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/AFC">
+      <obj_property name="ElementShortName">AFC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AFC[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/LOAD">
+      <obj_property name="ElementShortName">LOAD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LOAD[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/STORE">
+      <obj_property name="ElementShortName">STORE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">STORE[7:0]</obj_property>
+   </wvobject>
+</wave_config>

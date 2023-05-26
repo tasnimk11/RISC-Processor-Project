@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Test_Pipeline_unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Test_Pipeline_unit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="180000000fs"></ZoomEndTime>
+      <Cursor1Time time="22898000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="154"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_CLK">
+      <obj_property name="ElementShortName">local_CLK</obj_property>
+      <obj_property name="ObjectShortName">local_CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/local_RST">
+      <obj_property name="ElementShortName">local_RST</obj_property>
+      <obj_property name="ObjectShortName">local_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/local_B_OUT">
+      <obj_property name="ElementShortName">local_B_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">local_B_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Test_Pipeline_unit/clock_period">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/IM_local_Data_OUT">
+      <obj_property name="ElementShortName">IM_local_Data_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_local_Data_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/IP">
+      <obj_property name="ElementShortName">IP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IP[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_1_OP">
+      <obj_property name="ElementShortName">PIP_1_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_1_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_2_OP">
+      <obj_property name="ElementShortName">PIP_2_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_2_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_3_OP">
+      <obj_property name="ElementShortName">PIP_3_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_3_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_4_OP">
+      <obj_property name="ElementShortName">PIP_4_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_4_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Test_Pipeline_unit/instance/PIP_5_OP">
+      <obj_property name="ElementShortName">PIP_5_OP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIP_5_OP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/Reg_1_2_READ_B">
+      <obj_property name="ElementShortName">Reg_1_2_READ_B</obj_property>
+      <obj_property name="ObjectShortName">Reg_1_2_READ_B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/Reg_1_2_READ_C">
+      <obj_property name="ElementShortName">Reg_1_2_READ_C</obj_property>
+      <obj_property name="ObjectShortName">Reg_1_2_READ_C</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/Reg_2_3_WRITE_B">
+      <obj_property name="ElementShortName">Reg_2_3_WRITE_B</obj_property>
+      <obj_property name="ObjectShortName">Reg_2_3_WRITE_B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/Reg_3_4_WRITE_B">
+      <obj_property name="ElementShortName">Reg_3_4_WRITE_B</obj_property>
+      <obj_property name="ObjectShortName">Reg_3_4_WRITE_B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/CONFLICT">
+      <obj_property name="ElementShortName">CONFLICT</obj_property>
+      <obj_property name="ObjectShortName">CONFLICT</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Test_Pipeline_unit/instance/EN_IM">
+      <obj_property name="ElementShortName">EN_IM</obj_property>
+      <obj_property name="ObjectShortName">EN_IM</obj_property>
+   </wvobject>
+</wave_config>

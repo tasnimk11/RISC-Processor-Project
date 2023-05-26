@@ -85,3 +85,81 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK
 INFO: [VRFC 10-307] analyzing entity Pipeline_unit
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/RegBank_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegBank_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/RegBank_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegBank_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/InstructionMemory_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionMemory_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/tkammoun/4A/projet-sys-files/RISK_processor/RISK_processor.srcs/sources_1/new/Pipeline_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pipeline_unit

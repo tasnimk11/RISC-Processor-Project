@@ -42,10 +42,11 @@ architecture Behavioral of Pipeline_unit is
     -------------------------------------------------------
     -------------------------------------------------------
 
+    constant NOP  : STD_LOGIC_VECTOR(7 downto 0) := x"00";
     constant ADD  : STD_LOGIC_VECTOR(7 downto 0) := x"01";
-    constant MUL  : STD_LOGIC_VECTOR(7 downto 0) := x"02";
-    constant SUB  : STD_LOGIC_VECTOR(7 downto 0) := x"03";
-    constant DIV  : STD_LOGIC_VECTOR(7 downto 0) := x"04";
+    constant SUB  : STD_LOGIC_VECTOR(7 downto 0) := x"02";
+    constant DIV  : STD_LOGIC_VECTOR(7 downto 0) := x"03";
+    constant MUL  : STD_LOGIC_VECTOR(7 downto 0) := x"04";
     constant COP  : STD_LOGIC_VECTOR(7 downto 0) := x"05";
     constant AFC  : STD_LOGIC_VECTOR(7 downto 0) := x"06";
     constant LOAD : STD_LOGIC_VECTOR(7 downto 0) := x"07";
@@ -162,6 +163,7 @@ architecture Behavioral of Pipeline_unit is
     signal PIP_3_OP : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal PIP_3_A : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal PIP_3_B : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
+    signal PIP_3_C : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal WIRE_3_OP : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal WIRE_3_A : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal WIRE_3_B : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
@@ -178,6 +180,17 @@ architecture Behavioral of Pipeline_unit is
     signal PIP_5_OP : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal PIP_5_A : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
     signal PIP_5_B : STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
+    
+    -- CONFLICT DETECTORS ON REGISTERS
+    
+     signal Reg_1_2_READ_B  : STD_LOGIC := '0'; -- LI/DI  : B
+     signal Reg_1_2_READ_C  : STD_LOGIC := '0'; -- LI/DI  : C
+     signal Reg_2_3_WRITE_B : STD_LOGIC := '0'; -- DI/EX  : B
+     signal Reg_3_4_WRITE_B : STD_LOGIC := '0'; -- EX/Mem : B
+     
+     signal CONFLICT : STD_LOGIC := '0'; -- '1' : there is a conflict
+
+     signal EN_IM : STD_LOGIC := '1'; -- '0' disable if conflict      
 
 
 begin
@@ -242,16 +255,7 @@ begin
     process
     begin
         wait until rising_edge(CLK); 
-        
-        -------------------------------------------------------
-        -- LEVEL 1-2 : LI/DI
-        -------------------------------------------------------
-        
-        PIP_2_OP <= PIP_1_OP;
-        PIP_2_A <=  PIP_1_A;  
-        PIP_2_B <=  PIP_1_B;  
-        PIP_2_C <=  PIP_1_C;    
-        
+
         -------------------------------------------------------
         -- LEVEL 2-3 : DI/EX
         -------------------------------------------------------
@@ -275,21 +279,47 @@ begin
         PIP_5_OP <= WIRE_4_OP;
         PIP_5_A <=  WIRE_4_A;
         PIP_5_B <=  WIRE_4_B;
+                
+        -------------------------------------------------------
+        -- LEVEL 1-2 : LI/DI
+        -------------------------------------------------------
         
-        IP <= IP + 1; --increment ins pointer
+        if CONFLICT = '1' then -- there is a RW conflict
+            --if PIP_2_OP = NOP then 
+                -- Block LI/DI if there is a NOP
+                PIP_2_OP <= NOP ; -- NOP
+                PIP_2_A  <=  "00000000";  
+                PIP_2_B  <=  "00000000";  
+                PIP_2_C  <=  "00000000";
+            --end if;
+            EN_IM <= '0';
+        -- Block IP if there is a NOP
+        else
+        
+            PIP_2_OP <= PIP_1_OP;
+            PIP_2_A <=  PIP_1_A;  
+            PIP_2_B <=  PIP_1_B;  
+            PIP_2_C <=  PIP_1_C;
+            
+            IP <= IP + 1; --increment ins pointer
+            EN_IM <= '1';
+        end if;
+
   
     end process;
-
+    
+    
+   
     -------------------------------------------------------
     -- LEVEL 1 : LI
     -------------------------------------------------------
    
-    IM_local_Addr <= IP;
-   
-    PIP_1_OP <= IM_local_Data_OUT(31 downto 24); -- get the OP
-    PIP_1_A  <= IM_local_Data_OUT(23 downto 16); -- get the return register
-    PIP_1_B  <= IM_local_Data_OUT(15 downto 8);  -- get the first parameter
-    PIP_1_C  <= IM_local_Data_OUT(7 downto 0);   -- get the second parameter
+    IM_local_Addr <= IP ;
+    
+    PIP_1_OP <= IM_local_Data_OUT(31 downto 24) when EN_IM='1' ; -- get the OP
+    PIP_1_A  <= IM_local_Data_OUT(23 downto 16) when EN_IM='1' ; -- get the return register
+    PIP_1_B  <= IM_local_Data_OUT(15 downto 8)  when EN_IM='1' ; -- get the first parameter
+    PIP_1_C  <= IM_local_Data_OUT(7 downto 0)   when EN_IM='1' ; -- get the second parameter
     
     -------------------------------------------------------
     -- LEVEL 2 : DI
@@ -297,7 +327,12 @@ begin
     
     WIRE_2_OP <= PIP_2_OP;
     WIRE_2_A  <= PIP_2_A;
-    WIRE_2_B  <= PIP_2_B;
+    WIRE_2_B  <= PIP_2_B when (PIP_2_OP = AFC) or (PIP_2_OP = LOAD) else BR_local_QA ;
+    WIRE_2_C  <= BR_local_QB ;  
+
+    
+    BR_local_Addr_A <= PIP_2_B (3 downto 0);
+    BR_local_Addr_B <= PIP_2_C (3 downto 0);
     
     -------------------------------------------------------
     -- LEVEL 3 : EX
@@ -305,7 +340,11 @@ begin
     
     WIRE_3_OP <= PIP_3_OP;
     WIRE_3_A  <= PIP_3_A;
-    WIRE_3_B  <= PIP_3_B;
+    WIRE_3_B  <= PIP_3_B when (PIP_3_OP = AFC)  or (PIP_3_OP = COP) or (PIP_3_OP = LOAD) or (PIP_3_OP = STORE) else ALU_local_S;
+    
+    ALU_local_A <= PIP_3_B;
+    ALU_local_B <= PIP_3_C;
+    ALU_local_Ctrl_ALU <= PIP_3_OP (2 downto 0) when (PIP_3_OP = ADD)  or (PIP_3_OP = SUB) or (PIP_3_OP = MUL);
     
     -------------------------------------------------------
     -- LEVEL 4 : Mem
@@ -313,17 +352,86 @@ begin
     
     WIRE_4_OP <= PIP_4_OP;
     WIRE_4_A  <= PIP_4_A;
-    WIRE_4_B  <= PIP_4_B;
+    WIRE_4_B  <= DM_local_Data_OUT when PIP_4_OP = LOAD else  PIP_4_B;
+    
+    
+    DM_local_Addr <= PIP_4_B when PIP_4_OP = LOAD else PIP_4_A when PIP_4_OP = STORE ;
+    DM_local_RW   <= '1' when PIP_4_OP = LOAD else '0' when PIP_4_OP = STORE; 
+    DM_local_Data_IN <= PIP_4_B ; 
     
     -------------------------------------------------------
     -- LEVEL 5 : RE
     -------------------------------------------------------
     
     BR_local_Data <= PIP_5_B; 
-    BR_local_W <= '1'; --Write 
+    BR_local_W <= '0' when PIP_5_OP = STORE or  PIP_5_OP = NOP else '1'; --Write 
     BR_local_Addr_W <= PIP_5_A (3 downto 0) ;
     
 
-
+    -------------------------------------------------------
+    -- Conflicts : detect conflics
+    -------------------------------------------------------
+    Reg_1_2_READ_B  <= -- LI/DI  : B
+            '1'  
+        when 
+            PIP_1_OP = COP or
+            PIP_1_OP = ADD or
+            PIP_1_OP = SUB or
+            PIP_1_OP = MUL or
+            PIP_1_OP = DIV or
+            PIP_1_OP = STORE      
+        else 
+            '0' ;
+            
+    Reg_1_2_READ_C  <= -- LI/DI  : C
+             '1'  
+        when 
+            PIP_1_OP = COP or
+            PIP_1_OP = ADD or
+            PIP_1_OP = SUB or
+            PIP_1_OP = MUL or
+            PIP_1_OP = DIV or
+            PIP_1_OP = STORE     
+        else 
+            '0' ;
+            
+            
+            
+    Reg_2_3_WRITE_B <= -- DI/EX  : B
+            '1'  
+        when 
+            WIRE_2_OP = AFC or
+            WIRE_2_OP = COP or
+            WIRE_2_OP = ADD or
+            WIRE_2_OP = SUB or
+            WIRE_2_OP = MUL or
+            WIRE_2_OP = DIV or
+            WIRE_2_OP = LOAD    
+        else 
+                '0' ;
+                
+    Reg_3_4_WRITE_B <= -- EX/Mem : B
+            '1'  
+        when 
+            WIRE_3_OP = AFC or
+            WIRE_3_OP = COP or
+            WIRE_3_OP = ADD or
+            WIRE_3_OP = SUB or
+            WIRE_3_OP = MUL or
+            WIRE_3_OP = DIV or
+            WIRE_3_OP = LOAD         
+        else 
+            '0' ;
+    
+    CONFLICT <= 
+            '1'
+        when 
+            (Reg_1_2_READ_B='1' and Reg_2_3_WRITE_B='1' and PIP_1_B = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : B
+            (Reg_1_2_READ_C='1' and Reg_2_3_WRITE_B='1' and PIP_1_C = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : C
+            (Reg_1_2_READ_B='1' and Reg_3_4_WRITE_B='1' and PIP_1_B = PIP_3_A ) or  -- RW - LI/DI & EX/Mem
+            (Reg_1_2_READ_C='1' and Reg_3_4_WRITE_B='1' and PIP_1_C = PIP_3_A )     -- RW - LI/DI & EX/Mem
+        else 
+            '0' ;
+            
 
 end Behavioral;

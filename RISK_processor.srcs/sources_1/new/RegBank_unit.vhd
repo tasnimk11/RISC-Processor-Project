@@ -65,8 +65,8 @@ begin
   
    -- Asynchronous Task : Simultaneous Register Read
    
-   QA <= register_bank  (conv_integer(Addr_A)); -- Read Register A 
-   QB <= register_bank  (conv_integer(Addr_B)); -- Read Register B 
+   QA <= data when W = '1' and Addr_A = Addr_W else register_bank  (conv_integer(Addr_A)); -- Read Register A 
+   QB <= data when W = '1' and Addr_B = Addr_W else register_bank  (conv_integer(Addr_B)); -- Read Register B 
 
     
 end Behavioral;
