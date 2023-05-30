@@ -125,7 +125,7 @@ architecture Behavioral of Pipeline_unit is
     signal BR_local_Addr_W : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal BR_local_W : STD_LOGIC := '0';
     signal BR_local_Data : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal BR_local_RST : STD_LOGIC := '0';
+    signal BR_local_RST : STD_LOGIC := '1';
     signal BR_local_QA : STD_LOGIC_VECTOR (7 downto 0);
     signal BR_local_QB : STD_LOGIC_VECTOR (7 downto 0);
         
@@ -185,8 +185,9 @@ architecture Behavioral of Pipeline_unit is
     
      signal Reg_1_2_READ_B  : STD_LOGIC := '0'; -- LI/DI  : B
      signal Reg_1_2_READ_C  : STD_LOGIC := '0'; -- LI/DI  : C
-     signal Reg_2_3_WRITE_B : STD_LOGIC := '0'; -- DI/EX  : B
-     signal Reg_3_4_WRITE_B : STD_LOGIC := '0'; -- EX/Mem : B
+     signal Reg_2_3_WRITE_A : STD_LOGIC := '0'; -- DI/EX  : A
+     signal Reg_3_4_WRITE_A : STD_LOGIC := '0'; -- EX/Mem : A
+     signal Reg_4_5_WRITE_A : STD_LOGIC := '0'; -- Mem/WB : A
      
      signal CONFLICT : STD_LOGIC := '0'; -- '1' : there is a conflict
 
@@ -262,7 +263,8 @@ begin
            
         PIP_3_OP <= WIRE_2_OP;
         PIP_3_A <=  WIRE_2_A;
-        PIP_3_B <=  WIRE_2_B;        
+        PIP_3_B <=  WIRE_2_B;
+        PIP_3_C <=  WIRE_2_C;        
         
         -------------------------------------------------------
         -- LEVEL 3-4 : EX/Mem
@@ -397,7 +399,7 @@ begin
             
             
             
-    Reg_2_3_WRITE_B <= -- DI/EX  : B
+    Reg_2_3_WRITE_A <= -- DI/EX  : A
             '1'  
         when 
             WIRE_2_OP = AFC or
@@ -410,7 +412,7 @@ begin
         else 
                 '0' ;
                 
-    Reg_3_4_WRITE_B <= -- EX/Mem : B
+    Reg_3_4_WRITE_A <= -- EX/Mem : A
             '1'  
         when 
             WIRE_3_OP = AFC or
@@ -422,14 +424,32 @@ begin
             WIRE_3_OP = LOAD         
         else 
             '0' ;
+            
+    Reg_4_5_WRITE_A <= -- Mem/WB : A
+            '1'  
+        when 
+            WIRE_4_OP = AFC or
+            WIRE_4_OP = COP or
+            WIRE_4_OP = ADD or
+            WIRE_4_OP = SUB or
+            WIRE_4_OP = MUL or
+            WIRE_4_OP = DIV or
+            WIRE_4_OP = LOAD         
+        else 
+            '0' ;      
+            
+            
+       
     
     CONFLICT <= 
             '1'
         when 
-            (Reg_1_2_READ_B='1' and Reg_2_3_WRITE_B='1' and PIP_1_B = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : B
-            (Reg_1_2_READ_C='1' and Reg_2_3_WRITE_B='1' and PIP_1_C = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : C
-            (Reg_1_2_READ_B='1' and Reg_3_4_WRITE_B='1' and PIP_1_B = PIP_3_A ) or  -- RW - LI/DI & EX/Mem
-            (Reg_1_2_READ_C='1' and Reg_3_4_WRITE_B='1' and PIP_1_C = PIP_3_A )     -- RW - LI/DI & EX/Mem
+            (Reg_1_2_READ_B='1' and Reg_2_3_WRITE_A='1' and PIP_1_B = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : B
+            (Reg_1_2_READ_C='1' and Reg_2_3_WRITE_A='1' and PIP_1_C = PIP_2_A ) or  -- RW - LI/DI & DI/EX  : C
+            (Reg_1_2_READ_B='1' and Reg_3_4_WRITE_A='1' and PIP_1_B = PIP_3_A ) or  -- RW - LI/DI & EX/Mem : B
+            (Reg_1_2_READ_C='1' and Reg_3_4_WRITE_A='1' and PIP_1_C = PIP_3_A ) or  -- RW - LI/DI & EX/Mem : C
+            (Reg_1_2_READ_B='1' and Reg_4_5_WRITE_A='1' and PIP_1_B = PIP_4_A ) or  -- RW - LI/DI & Mem/WB : B
+            (Reg_1_2_READ_C='1' and Reg_4_5_WRITE_A='1' and PIP_1_C = PIP_4_A )     -- RW - LI/DI & Mem/WB : C
         else 
             '0' ;
             
